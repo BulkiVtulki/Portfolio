@@ -1,0 +1,15 @@
+.promo {
+    min-height: 100vh;
+    padding-top: 205px;
+    position: relative;
+    background: url('../img/background.jpg') no-repeat 50%/cover;
+    &__subtitle {
+        font-size: 16px;
+    }
+    &__title {
+        margin-top: 9px;
+        width: 532px;
+        height: 129px;
+        font-size: 48px;
+    }
+}
