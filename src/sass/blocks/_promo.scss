@@ -9,7 +9,57 @@
     &__title {
         margin-top: 9px;
         width: 532px;
-        height: 129px;
         font-size: 48px;
     }
+    &__btns {
+        display: flex;
+        margin-top: 25px;
+    }
+    &__link {
+        width: 135px;
+        height: 45px;
+    }
+    &__hamburger-wrapper {
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 30px;
+    }
+    &__hamburger {
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        cursor: pointer;
+        span {
+            align-self: flex-end;
+            margin-bottom: 6px;
+            width: 30px;
+            height: 3px;
+            background-color: rgb(0, 0, 0);
+            &:nth-child(2) {
+                width: 36px;
+            }
+        }
+    }
+    &__contacts-wrapper {
+
+    }
+    &__contacts {
+        display: flex;
+    }
+    &__hyphen {
+        align-self: center;
+        display: block;
+        width: 70px;
+        height: 2px;
+        margin-left: 15px;
+        background-color: rgb(0, 0, 0);
+    }
+    &__social {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+
 }
