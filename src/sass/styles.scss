@@ -1,8 +1,9 @@
 @import 'libs/bootstrap-reboot.min';
-@import 'libs/font';
+@import 'libs/fonts';
 @import 'base/variablse';
 @import "blocks/title";
 @import "blocks/buttons";
+@import "base/mixins";
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -17,3 +18,4 @@
 }
 
 @import "blocks/promo";
+@import "blocks/sidePanel.scss"

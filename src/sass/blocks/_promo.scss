@@ -4,7 +4,11 @@
     position: relative;
     background: url('../img/background.jpg') no-repeat 50%/cover;
     &__subtitle {
+        margin-left: 10px;
+        position: relative;
         font-size: 16px;
+        @include orangeCircle;
+        z-index: 1;
     }
     &__title {
         margin-top: 9px;
@@ -16,8 +20,10 @@
         margin-top: 25px;
     }
     &__link {
-        width: 135px;
+        margin-right: 11px;
+        min-width: 135px;
         height: 45px;
+        transition: all .5s;
     }
     &__hamburger-wrapper {
         position: absolute;
@@ -41,25 +47,4 @@
             }
         }
     }
-    &__contacts-wrapper {
-
-    }
-    &__contacts {
-        display: flex;
-    }
-    &__hyphen {
-        align-self: center;
-        display: block;
-        width: 70px;
-        height: 2px;
-        margin-left: 15px;
-        background-color: rgb(0, 0, 0);
-    }
-    &__social {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
-        color: #000000;
-    }
-
 }
