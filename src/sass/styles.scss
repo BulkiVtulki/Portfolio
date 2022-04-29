@@ -1,9 +1,10 @@
+@import 'base/variablse';
+@import "base/mixins";
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/fonts';
-@import 'base/variablse';
 @import "blocks/title";
 @import "blocks/buttons";
-@import "base/mixins";
+
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -18,4 +19,6 @@
 }
 
 @import "blocks/promo";
-@import "blocks/sidePanel.scss"
+@import "blocks/sidePanel.scss";
+@import "blocks/menu";
+@import "blocks/about";

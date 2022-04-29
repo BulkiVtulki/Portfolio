@@ -1,5 +1,5 @@
 .contacts {
-    position: absolute;
+    position: fixed;
     display: flex;
     left: -6vw;
     top: 50vh;
@@ -27,8 +27,7 @@
         transition: all 2s;
         &:hover {
             color: $main-color;
-            transform: rotate(1170deg);
-            
+            transform: rotate(1170deg);            
         }
     }
 }

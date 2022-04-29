@@ -2,4 +2,17 @@
     font-weight: 700;
     font-size: 36px;
     color: #000000;
+    &__sub {
+        margin-left: 10px;
+        position: relative;
+        font-size: 16px;
+        @include orangeCircle;
+        z-index: 1;
+    }
+    &__divider {
+        display: block;
+        background: $main-color;
+        width: 60px;
+        height: 1px;
+    }
 }

@@ -3,13 +3,6 @@
     padding-top: 205px;
     position: relative;
     background: url('../img/background.jpg') no-repeat 50%/cover;
-    &__subtitle {
-        margin-left: 10px;
-        position: relative;
-        font-size: 16px;
-        @include orangeCircle;
-        z-index: 1;
-    }
     &__title {
         margin-top: 9px;
         width: 532px;

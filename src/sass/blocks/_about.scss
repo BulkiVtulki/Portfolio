@@ -1,0 +1,34 @@
+.about {
+    min-height: 840px;
+    padding: 120px 0;
+    position: relative;
+    &__grid {
+        position: relative;
+        display: grid;
+        width: 1040px;
+        grid-template: repeat(4, minmax(100px, auto)) / 400px repeat(2, minmax(260px, auto));
+        grid-template-areas: 
+        "me title title"
+        "me descr descr"
+        "me about_1 about_2"
+        "me about_3 .";
+    }
+    &__me {
+        grid-area: me;
+    }
+    &__title {
+        grid-area: title;
+    }
+    &__descr {
+        grid-area: descr;
+    }
+    #about_1 {
+        grid-area: about_1;
+    }
+    #about_2 {
+        grid-area: about_2;
+    }
+    #about_3 {
+        grid-area: about_3;
+    }
+}

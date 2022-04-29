@@ -11,3 +11,17 @@
         left: -1%;
     }
 }
+
+@mixin transparentCircle {
+    &::before {
+        content: "";
+        left: -35px;
+        top: 25%;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        border: 1px solid #000000;
+        z-index: -1;        
+    }
+}
