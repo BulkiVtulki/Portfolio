@@ -1,0 +1,39 @@
+.promo {
+    min-height: 100vh;
+    padding-top: 205px;
+    position: relative;
+    background: url('../img/background.jpg') no-repeat 50%/cover;
+    // z-index: -10;
+    &__title {
+        margin-bottom: 0;
+        margin-top: 3px;
+        width: 532px;        
+    }
+    &__subtitle {
+        margin-left: 10px;
+        position: relative;
+        @include before-circle;
+        z-index: 2;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 11px;
+        height: 45px;
+        min-width: 135px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: black;
+        text-decoration: none;
+        transition: 0.5s all;
+        &:hover {
+            color: black;
+        }
+    }
+}

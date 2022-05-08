@@ -1,0 +1,245 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    height: 51.5px;
+    background: #212121;;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu .menu_link {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;    
+    text-decoration: none;
+}
+
+.menu .menu_link:hover {
+    text-decoration: underline;
+}
+
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+    min-height: 87px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* mix-blend-mode: normal;  */
+    /* z-index: 1; */
+}
+
+.subheader .subheader_logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_logo_text {
+    margin-top: 6px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 13px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.subheader_call, a.tel_number {
+    text-align: right;
+}
+
+.subheader_call  {
+    margin-top: 19px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+a.tel_number {
+    display: block;
+    line-height: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subheader_btn {
+    margin-top: 18px;
+    width: 172px;
+    height: 46px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.promo {
+    padding: 142px 0 186px 0;
+    min-height: 799px;
+    background: url(/src/img/Bg/uber_bg.jpg) center center/cover no-repeat;
+    /* transform: translateY(-88px); */
+    /* z-index: -1; */
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+h2.promo_subheader {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+
+.promo .promo_descr {
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+button.promo_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 115px;
+    width: 259px;
+    height: 63px;   
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.eight_causes {
+    min-height: 849px;
+    padding: 20px 0 64px 0;
+}
+
+/* со 162 по "------------" выполнена домашняя работа и приведены сравнения и ошибки, которые я нашел в примере с ГитХаба */
+
+.Benefits {
+    display: block; /* из примера не надо длеать его блочным и вообще текст и фон сделан в одном div, далее по этому жлементу не оставляю комментариев, так как более или менее все понятно */
+    margin: 0 auto;
+    align-items: center;
+    width: 115px;
+    height: 27px;
+    background: #000000;
+}
+
+.Benefits_text {
+    padding: 8.5px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h2.causes {
+    display: block; /* не надо делать его блочным, так как он изначально блочный элемент */
+    margin: 0 auto; /* обнуление марджина необходимо, так как в БТ библиотеке появляется какой то, а вот ао вертикали выравнивание не надо, достаточно tac так как опять же, блок занимает всю ширину строки */
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+
+}
+
+.cmd6 {
+    padding: 0;
+}
+
+.eight_causes_item {
+    padding: 0 50px;
+}
+
+.causes_item {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    /* align-items: center;  Данной строки не было у меня, так как до конца еще не понял как работает флексбокс технология, она добавлена из примера*/
+    min-height: 177px; /* в примере нет установления высоты, как я понимаю, потому что не было необходимости, вся тактика позиционирования в примере друга, см. комм в HTML на 97 строке */
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    margin-right: 25px;
+}
+
+.causes_item_text {
+    /* display: inline-block; */
+    width: 430px;
+    /* height: 170px; */
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.causes_item_text span {
+    font-size: 20px;
+    color: #1EACC7;
+}
+
+.cmd6_1 {
+    padding: 0 0 0 70px;
+}
+
+/* "------------" */

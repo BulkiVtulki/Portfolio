@@ -1,0 +1,39 @@
+@mixin before-circle {
+    &::before{
+        content: "";
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        top: -25%;
+        left: -1%;
+        border-radius: 100%;
+        background: $main-color;
+        z-index: -1;
+    }
+}
+
+@mixin transparent-circle {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 30%;
+        left: -35px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        border: 1px solid #000000;
+    }
+}
+
+@mixin orange-circle {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 14%;
+        left: -25px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: $main-color;
+    }
+}

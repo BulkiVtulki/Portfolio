@@ -1,0 +1,81 @@
+.resume {
+    padding-top: 120px;
+    position: relative;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+        ul {
+            padding: 0;
+            list-style-type: none;
+            li {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -8px;
+                    left: 0;
+                    background-color: black;
+                    width: 1px;
+                    height: calc(100% + 6px);
+                }
+            }
+        }
+    }
+    &__column {
+        &-title {
+            position: relative;
+            margin-bottom: 0;
+            padding-left: 35px;
+            line-height: 30px;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background: $main-color;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 65px;
+            width: 43px;
+            height: 1px;
+            background: black;
+        }
+        &-subtitle {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+        }
+        &-body {
+            padding: 12px 0 0 43px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+        &-icon {
+            position: absolute;
+            padding: 6px 0 0 15px;
+            top: 55px;
+            left: 44px;
+            @include before-circle
+        }
+    }
+}

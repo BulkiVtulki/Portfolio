@@ -1,0 +1,37 @@
+.title {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    color: #000000;
+    &_fs14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fs16 {
+        margin-bottom: 6px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fs20 {
+        font-size: 20px;
+    }
+    &_fs48 {
+        font-size: 48px;
+    }
+    &__section-title {
+        text-align: center;
+        @include before-circle;
+        &::before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
+    &__divider {
+        margin: 25px auto 0;
+    }
+}

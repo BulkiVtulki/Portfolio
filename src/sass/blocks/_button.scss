@@ -1,0 +1,13 @@
+.button {
+    padding: 0 26px;
+    background: $main-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    &_hover {
+        &:hover {
+            background: $main-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
