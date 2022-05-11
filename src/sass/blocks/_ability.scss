@@ -4,7 +4,8 @@
         margin-top: 60px;
         padding: 0 10px;
         display: grid;
-        grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+        justify-content: center;
+        grid-template: repeat(2, minmax(270px, auto)) / repeat(auto-fill, 270px);
         grid-auto-rows: minmax(270px, auto);
         column-gap: 13px;
         row-gap: 13px;

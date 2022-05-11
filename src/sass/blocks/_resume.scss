@@ -75,7 +75,11 @@
             padding: 6px 0 0 15px;
             top: 55px;
             left: 44px;
-            @include before-circle
+            @include before-circle;
+            &::before {
+                top: -22%;
+                left: -1px;
+            }
         }
     }
 }

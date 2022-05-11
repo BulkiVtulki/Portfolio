@@ -12,6 +12,8 @@
         grid-row: 1 / 3;
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     &__descr {
@@ -26,6 +28,7 @@
         @include before-circle;
         &::before {
             left: 0;
+            top: -18%;
         }
     }
     &__text {
